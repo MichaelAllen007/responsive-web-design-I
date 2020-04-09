@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .nav-bar {
-	/* border: 2px solid red; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -76,17 +75,10 @@ h1, h2, h3, h4, h5 {
 	z-index: 9999;
 }
 
-nav {
-	text-align: center;
-	width: 100%;
-}
 
 nav a {
-	align-items: center;
-	justify-content: center;
 	text-decoration: none;
-	margin-right: 5%;
-	padding: 20px;
+	padding: 40px;
 	color: #000000;
 	font-weight: bold;
 }
@@ -98,7 +90,6 @@ nav a:hover {
 
 
 .header {
-	/* border: 2px solid blue; */
 	display: flex;
 	justify-content: center;
 	margin: auto;
@@ -106,7 +97,6 @@ nav a:hover {
 }
 
 h1 {
-	/* border: 2px solid red; */
 	font-size: 72px;
 	text-align: center;
 }
@@ -121,7 +111,6 @@ h1 {
 }
 
 #header-image {
-	/* border: 2px solid red; */
 	display: flex;
 	margin: auto;
 	vertical-align: bottom;
@@ -161,14 +150,12 @@ p {
 	margin: auto;
 }
 #content {
-	/* border: 2px solid blue; */
 	width: 70%;
 	margin: auto;
 	padding: 40px;
 }
 
 .top-content {
-	/* border: 2px solid red; */
 	display: flex;
 	width: 100%;
 	margin: auto;
@@ -187,7 +174,6 @@ p {
 }
 
 .bottom-content {
-	/* border: 2px solid red; */
 	display: flex;
 	width: 100%;
 	margin: auto;
@@ -199,7 +185,6 @@ p {
 }
 
 .contact {
-	/*border: 2px solid blue;*/
 	width: 66%;
 	margin: auto;
 	padding-top: 30px;
@@ -214,7 +199,6 @@ footer {
 /* Services.css starts here */
 
 .service-header {
-	/* border: 2px solid red; */
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -233,7 +217,6 @@ footer {
 }
 
 #services-content {
-	/*border: 2px solid red;*/
     border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	height: 930px;
@@ -261,7 +244,6 @@ footer {
 .facts {
 	display: flex;
 	flex-direction: row;
-	/*border: 2px solid red; */
 	width: 60%;
 	margin-right: 20%;
 	margin-left: 19%;
@@ -271,7 +253,6 @@ footer {
 
 .service-list {
 	width: 57%;
-	/*border: 2px solid blue; */
 }
 
 ul {
@@ -283,5 +264,122 @@ ul {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	/*border: 2px solid blue; */
+}
+
+#tablet-image {
+	display: none;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+@media (max-width: 800px) {
+
+	.nav-bar {
+		padding-top: 20px;
+		background-image: none;
+		width: 100%;
+		position: unset;
+		flex-direction: column-reverse;
+	}
+
+	.nav-bar a {
+		text-decoration: none;
+		padding: 40px;
+		color: lightgray;
+		font-weight: bold;
+	}
+
+	.code-snippet {
+		display: none;
+	}
+
+	#content {
+		width: 100%;
+		margin: auto;
+		padding: 40px;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+	.contact {
+		width: 90%;
+	}
+
+	#mobile-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.nav-bar, nav, nav a, nav a:hover {
+		display: none;
+	}
+
+	#mobile-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#mobile-nav a {
+		text-decoration: none;
+		padding: 20px;
+		color: lightgray;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid gray;
+	}
+
+	#tablet-image {
+		padding-top: 20px;
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid gray;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	#content {
+		width: 100%;
+	}
+	
+	.top-content {
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	
+	.top-content article{
+		width: 100%;
+		padding-top: 30px;
+	}
+	
+	.bottom-content {
+		flex-direction: column;
+		margin: auto;
+		padding-top: 30px;
+	}
+	
+	.bottom-content article{
+		padding-top: 30px;
+		width: 100%;
+	}
+
+	.contact {
+		width: 83%;
+	}
+
+	hr {
+		border-top: 2px solid black;
+		margin: auto;
+		padding: 0;
+		width: 83%;
+	}
 }
