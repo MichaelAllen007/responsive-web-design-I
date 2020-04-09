@@ -1,3 +1,385 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: radial-gradient(circle, #00d4ff, #090979);
+	height: 45px;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
 
 
+nav a {
+	text-decoration: none;
+	padding: 40px;
+	color: #000000;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: white;
+	font-weight: bold;
+}
+
+
+.header {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 70%;
+}
+
+h1 {
+	font-size: 72px;
+	text-align: center;
+}
+
+.h1-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 500px;
+}
+
+#header-image {
+	display: flex;
+	margin: auto;
+	vertical-align: bottom;
+	padding: 4%;
+}
+
+button {
+	border: 2px solid black;
+	color: black;
+	width: 150px;
+	height: 35px;
+	background-color: white;
+}
+
+button:hover {
+	cursor: pointer;
+	background: black;
+	color: white;
+}
+
+hr {
+	border-top: 5px solid lightgray;
+	border-radius: 5px;
+	margin: auto;
+	padding: 0;
+	width: 66%;
+}
+
+h2 {
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-size: 16px;
+	margin: auto;
+}
+#content {
+	width: 70%;
+	margin: auto;
+	padding: 40px;
+}
+
+.top-content {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.top-content article {
+	width: 49%;
+}
+
+.middle-img {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.bottom-content {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.bottom-content article {
+	width: 33%;
+}
+
+.contact {
+	width: 66%;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/* Services.css starts here */
+
+.service-header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 60%;
+	margin-right: 10%;
+	margin-left: 19%;
+	padding-bottom: 30px;
+}
+
+.services-header-img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+#services-content {
+    border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	height: 930px;
+	width: 60%;
+	margin-left: 19%;
+	margin-right: 20%;
+	padding-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.services-box {
+    width: 47%;
+    height: 250px;
+    background: #D8D8D8;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.services-button{
+	border-radius: 8px;
+}
+
+.facts {
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 19%;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.service-list {
+	width: 57%;
+}
+
+ul {
+	text-indent: 20px;
+	list-style-type: square;
+}
+
+.services-info-img {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tablet-image {
+	display: none;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+@media (max-width: 800px) {
+
+	.nav-bar {
+		padding-top: 20px;
+		background-image: none;
+		width: 100%;
+		position: unset;
+		flex-direction: column-reverse;
+	}
+
+	.nav-bar a {
+		text-decoration: none;
+		padding: 40px;
+		color: lightgray;
+		font-weight: bold;
+	}
+
+	.code-snippet {
+		display: none;
+	}
+
+	#content {
+		width: 100%;
+		margin: auto;
+		padding: 40px;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+	.contact {
+		width: 90%;
+	}
+
+	#mobile-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.nav-bar, nav, nav a, nav a:hover {
+		display: none;
+	}
+
+	#mobile-nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#mobile-nav a {
+		text-decoration: none;
+		padding: 20px;
+		color: lightgray;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid gray;
+	}
+
+	#tablet-image {
+		padding-top: 20px;
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid gray;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+
+	#content {
+		width: 100%;
+	}
+	
+	.top-content {
+		flex-direction: column;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	
+	.top-content article{
+		width: 100%;
+		padding-top: 30px;
+	}
+	
+	.bottom-content {
+		flex-direction: column;
+		margin: auto;
+		padding-top: 30px;
+	}
+	
+	.bottom-content article{
+		padding-top: 30px;
+		width: 100%;
+	}
+
+	.contact {
+		width: 83%;
+	}
+
+	hr {
+		border-top: 2px solid black;
+		margin: auto;
+		padding: 0;
+		width: 83%;
+	}
+}
